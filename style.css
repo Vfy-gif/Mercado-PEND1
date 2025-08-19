@@ -3,3 +3,46 @@
     margin: 0;
     box-sizing: border-box;
 }
+.up{
+    background-color: #ffe600;
+    height: 8vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.up img{
+    height: 4vh;
+    position: relative;
+    margin-right: 43vw;
+    margin-bottom: 4vh;
+}
+.pesquisar{
+    height: 4vh;
+    width: 30vw;
+    background-color: white;
+    position: absolute;
+    margin-bottom: 40px;
+}
+.pesquisar img{
+    height: 20px;
+    width: 20px;
+    margin-left: 93%;
+    margin-top: 5px;
+    position: absolute;
+}
+.pesquisar input{
+    position: absolute;
+    height: 4vh;
+    width: 30vw;
+    text-indent: 15px;
+    border: 0;
+    outline: 1.5px solid rgb(36, 36, 251);
+    border-radius: 1px;
+    font-size: 14px;
+}
+.down{
+    background-color: aliceblue;
+    height: 2vh;
+}
+
