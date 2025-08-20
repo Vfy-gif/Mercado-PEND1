@@ -16,7 +16,7 @@ header {
     padding-top: 8px;
 }
 
-.mercado_livre_logo{
+.mercado_livre_logo {
     background-color: transparent;
     outline: 0;
     border: 0;
@@ -29,8 +29,9 @@ header {
 
 .barra_pesquisa {
     height: 40px;
-    width: 40vw;
-    margin-inline: 8vw;
+    width: 30vw;
+    margin-right: 14vw;
+    margin-left: 2vw;
 }
 
 .barra_pesquisa input {
@@ -43,7 +44,7 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.barra_pesquisa input:focus{
+.barra_pesquisa input:focus {
     outline: 1px solid blue;
 }
 
@@ -51,13 +52,15 @@ header {
     height: 21px;
     width: 46px;
 }
+
 .pesquisa {
     height: 40px;
     width: 46px;
     position: absolute;
-    left: 58.8vw;
+    left: 60vw;
+    top: 1vh;
     border: 0;
-    border-left: 1px solid rgba(128, 128, 128, 0.5) ;
+    border-left: 1px solid rgba(128, 128, 128, 0.5);
     border-radius: 1px;
     z-index: 2;
     background-color: transparent;
@@ -72,4 +75,55 @@ header {
 .meli_logo img {
     height: 39px;
     width: 340px;
+}
+
+.menu_inferior {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    list-style: none;
+}
+
+.menu_inferior img {
+    height: 20px;
+    width: 22px;
+}
+
+.metade_menu_inferior {
+    display: flex;
+    background-color: aqua;
+    margin-right: 14vw;
+    margin-left: 6vw;
+
+}
+ .cep button{
+    background-color: transparent;
+    border: 0;
+ }
+.cep button a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 1vh;
+}
+
+.metade_menu_inferior li a {
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+
+.segunda_metade_menu_inferior {
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.segunda_metade_menu_inferior li a {
+    text-decoration: none;
+    color: black;
+}
+
+.carrinho {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
 }
