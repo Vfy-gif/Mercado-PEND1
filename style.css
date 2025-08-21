@@ -6,13 +6,16 @@
 
 header {
     height: 100px;
+    width: 100vw;
     background-color: #FFE600;
     padding-inline: 10px;
 }
 
 .menu_superior {
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
     padding-top: 8px;
 }
 
@@ -57,7 +60,7 @@ header {
     height: 40px;
     width: 46px;
     position: absolute;
-    left: 60vw;
+    left: 56.5vw;
     top: 1vh;
     border: 0;
     border-left: 1px solid rgba(128, 128, 128, 0.5);
@@ -80,7 +83,9 @@ header {
 .menu_inferior {
     display: flex;
     justify-content: center;
-    margin-top: 2vh;
+    align-items: center;
+    width: 100%;
+    padding-top: 2vh;
     list-style: none;
 }
 
@@ -126,4 +131,15 @@ header {
     background-color: transparent;
     outline: 0;
     border: 0;
+}
+
+.carrossel_imagens{
+    height: 60vh;
+    width: 100vw;
+}
+
+.carrossel_imagens img{
+    height: 60vh;
+    width: 100vw;
+    object-fit: fill;
 }
