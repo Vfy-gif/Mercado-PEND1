@@ -101,10 +101,12 @@ header {
     margin-left: 6vw;
 
 }
- .cep button{
+
+.cep button {
     background-color: transparent;
     border: 0;
- }
+}
+
 .cep button a {
     text-decoration: none;
     color: black;
@@ -133,12 +135,12 @@ header {
     border: 0;
 }
 
-.carrossel_imagens{
+.carrossel_imagens {
     height: 60vh;
     width: 100vw;
 }
 
-.carrossel_imagens img{
+.carrossel_imagens img {
     height: 60vh;
     width: 100vw;
     object-fit: fill;
