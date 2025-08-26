@@ -5,8 +5,10 @@
 }
 
 header {
+    position: fixed;
     height: 100px;
-    background-color: #FFE600;
+    width: 100%;
+    background-color: rgb(143, 104, 244);
     padding-inline: 10px;
 }
 
@@ -14,16 +16,17 @@ header {
     display: flex;
     justify-content: center;
     padding-top: 8px;
+    position: relative
 }
 
-.mercado_livre_logo {
+.mercado_privado_logo {
     background-color: transparent;
     outline: 0;
     border: 0;
 }
 
-.mercado_livre_logo img {
-    height: 34px;
+.mercado_privado_logo img {
+    height: 40px;
     width: 134px;
 }
 
@@ -80,7 +83,7 @@ header {
 .menu_inferior {
     display: flex;
     justify-content: center;
-    margin-top: 2vh;
+    margin-top: 1.6vh;
     list-style: none;
 }
 
@@ -91,19 +94,23 @@ header {
 
 .metade_menu_inferior {
     display: flex;
-    background-color: aqua;
-    margin-right: 14vw;
+    margin-right: 10vw;
     margin-left: 6vw;
-
 }
- .cep button{
+
+.cep button {
     background-color: transparent;
     border: 0;
- }
+}
+
 .cep button a {
     text-decoration: none;
     color: black;
     margin-bottom: 1vh;
+}
+
+.metade_menu_inferior li {
+    padding-inline: 4px;
 }
 
 .metade_menu_inferior li a {
@@ -114,7 +121,10 @@ header {
 
 .segunda_metade_menu_inferior {
     display: flex;
-    background-color: antiquewhite;
+}
+
+.segunda_metade_menu_inferior li {
+    padding-inline: 8px;
 }
 
 .segunda_metade_menu_inferior li a {
@@ -126,4 +136,125 @@ header {
     background-color: transparent;
     outline: 0;
     border: 0;
+}
+
+main {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.carrossel_imagens {
+    height: 500px;
+    object-fit: cover;
+    animation: slider 12s infinite, fade 4s;
+}
+
+@keyframes slider {
+
+    0%,
+    20% {
+        background-image: url(./img/propaganda-1.png);
+    }
+
+    21%,
+    40% {
+        background-image: url(./img/propaganda-2.png);
+    }
+
+    41%,
+    60% {
+        background-image: url(./img/propaganda-3.png);
+    }
+
+    61%,
+    80% {
+        background-image: url(./img/propaganda-4.png);
+    }
+
+    81%,
+    100% {
+        background-image: url(./img/propaganda-5.png);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    15%,
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.button_carrossel_1,
+.button_carrossel_2 {
+    z-index: 1;
+    height: 7vh;
+    width: 2%;
+    font-size: 20px;
+    outline: 0;
+    border: 0;
+    background-color: white;
+    color: rgb(25, 87, 255);
+    border-radius: 100%;
+    margin-top: 11%;
+    text-align: center;
+}
+
+.button_carrossel_1 {
+    position: absolute;
+    left: 0px;
+}
+
+.button_carrossel_2 {
+    position: absolute;
+    right: 0px;
+}
+
+.quad_button_1,
+.quad_button_2 {
+    background-color: white;
+    height: 7vh;
+    width: 0.9vw;
+    z-index: -1;
+}
+
+.quad_button_1 {
+    position: absolute;
+    top: 0px;
+}
+
+.quad_button_2 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+.produto_oferta{
+    height: 399px;
+    width: 181.5px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+.produto_oferta img{
+    width: 100%;
+}
+
+.produto_oferta li{
+    list-style: none;
+}
+
+.produto_oferta li a {
+    text-decoration: none;
+    color: inherit;
+}
+.produto_oferta li a:hover{
+    color: rgb(0, 132, 255);
 }
