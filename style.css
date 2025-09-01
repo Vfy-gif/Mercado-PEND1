@@ -249,6 +249,7 @@ main {
 
 .produto_oferta li{
     list-style: none;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .produto_oferta li a {
@@ -257,4 +258,9 @@ main {
 }
 .produto_oferta li a:hover{
     color: rgb(0, 132, 255);
+}
+
+.produto_oferta span {
+    font-weight: 600;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
