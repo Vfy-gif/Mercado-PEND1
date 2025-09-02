@@ -237,30 +237,44 @@ main {
 }
 
 
-.produto_oferta{
+.produto_oferta {
     height: 399px;
     width: 181.5px;
-    background-color: aquamarine;
     border: 1px solid black;
 }
-.produto_oferta img{
+
+.produto_oferta img {
     width: 100%;
 }
 
-.produto_oferta li{
+.produto_oferta li {
     list-style: none;
     font-family: "Helvetica", "Arial", sans-serif;
+    margin-bottom: 13px;
+    margin-top: 4px;
 }
 
 .produto_oferta li a {
     text-decoration: none;
     color: inherit;
 }
-.produto_oferta li a:hover{
+
+.produto_oferta li a:hover {
     color: rgb(0, 132, 255);
 }
 
 .produto_oferta span {
-    font-weight: 600;
+    font-weight: 300;
     font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 25px;
+    display: flex;
+}
+
+.produto_oferta span li {
+    font-size: 13px;
+}
+.produto_oferta h1 {
+    font-weight: 300;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
 }
