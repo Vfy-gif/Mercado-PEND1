@@ -209,13 +209,13 @@ a {
     display: block;
 }
 
-.carrossel-anuncios{
+.carrossel-anuncios {
     display: flex;
     height: 500px;
     object-fit: cover;
     animation: slider 12s infinite, fade 4s;
     justify-content: center;
-    background-size: contain; 
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -306,11 +306,12 @@ a {
     right: 0px;
 }
 
-.indicators{
+.indicators {
     display: flex;
     padding-top: 280px;
 }
-.indicador{
+
+.indicador {
     height: 5.6px;
     width: 5.6px;
     border-radius: 100px;
@@ -318,97 +319,194 @@ a {
     border: 1px solid white;
 }
 
-.indicador:nth-child(1){
-     animation: indicator1 12s infinite;
+.indicador:nth-child(1) {
+    animation: indicator1 12s infinite;
 }
-.indicador:nth-child(2){
-     animation: indicator2 12s infinite;
+
+.indicador:nth-child(2) {
+    animation: indicator2 12s infinite;
 }
-.indicador:nth-child(3){
-     animation: indicator3 12s infinite;
+
+.indicador:nth-child(3) {
+    animation: indicator3 12s infinite;
 }
-.indicador:nth-child(4){
-     animation: indicator4 12s infinite;
+
+.indicador:nth-child(4) {
+    animation: indicator4 12s infinite;
 }
-.indicador:nth-child(5){
-     animation: indicator5 12s infinite;
+
+.indicador:nth-child(5) {
+    animation: indicator5 12s infinite;
 }
 
 @keyframes indicator1 {
-    0%, 20% { background-color: white; }
-    21%, 100% { background-color: rgba(102, 100, 100, 0.5); }
+
+    0%,
+    20% {
+        background-color: white;
+    }
+
+    21%,
+    100% {
+        background-color: rgba(102, 100, 100, 0.5);
+    }
 }
 
 @keyframes indicator2 {
-    0%, 20% { background-color: rgba(102, 100, 100, 0.5); }
-    21%, 40% { background-color: white; }
-    41%, 100% { background-color: rgba(102, 100, 100, 0.5); }
+
+    0%,
+    20% {
+        background-color: rgba(102, 100, 100, 0.5);
+    }
+
+    21%,
+    40% {
+        background-color: white;
+    }
+
+    41%,
+    100% {
+        background-color: rgba(102, 100, 100, 0.5);
+    }
 }
 
 @keyframes indicator3 {
-    0%, 40% { background-color: rgba(102, 100, 100, 0.5); }
-    41%, 60% { background-color: white; }
-    61%, 100% { background-color: rgba(102, 100, 100, 0.5); }
+
+    0%,
+    40% {
+        background-color: rgba(102, 100, 100, 0.5);
+    }
+
+    41%,
+    60% {
+        background-color: white;
+    }
+
+    61%,
+    100% {
+        background-color: rgba(102, 100, 100, 0.5);
+    }
 }
 
 @keyframes indicator4 {
-    0%, 60% { background-color: rgba(102, 100, 100, 0.5); }
-    61%, 80% { background-color: white; }
-    81%, 100% { background-color: rgba(102, 100, 100, 0.5); }
+
+    0%,
+    60% {
+        background-color: rgba(102, 100, 100, 0.5);
+    }
+
+    61%,
+    80% {
+        background-color: white;
+    }
+
+    81%,
+    100% {
+        background-color: rgba(102, 100, 100, 0.5);
+    }
 }
 
 @keyframes indicator5 {
-    0%, 80% { background-color: rgba(102, 100, 100, 0.5); }
-    81%, 100% { background-color: white; }
+
+    0%,
+    80% {
+        background-color: rgba(102, 100, 100, 0.5);
+    }
+
+    81%,
+    100% {
+        background-color: white;
+    }
 }
 
-.color-gradient{
+.color-gradient {
     position: absolute;
     height: 18vh;
     width: 100%;
     margin-top: 300px;
-     background: linear-gradient(
-    transparent, 
-    rgba(255, 255, 255, 0.82), 
-    rgb(175, 175, 175), 
-    rgb(131, 131, 131)
-  );
+    background: linear-gradient(transparent,
+            rgba(255, 255, 255, 0.82),
+            rgb(231, 231, 231),
+            rgb(255, 255, 255));
 }
 
-.nav-cards{
+.nav-cards {
     display: flex;
-    height: 300px;
+    height: 270px;
     width: 100%;
     margin-top: -205px;
     position: absolute;
+    justify-content: center;
 }
-.card-info{
+
+.card-info {
     background-color: rgb(255, 255, 255);
-    width: 200px;
-    margin-inline: 20px;
+    width: 180px;
+    margin-inline: 10px;
     padding: 20px 15px;
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     color: inherit;
+    font-weight: bold;
+    position: relative;
 }
-.card-info img {
-    margin-top: 20px;
-    background-color: rgb(133, 133, 133);
-    height: 50%;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.card-info li:nth-child(3){
-    text-align: center;
+
+.card-info li:nth-child(1) {
     font-size: 14px;
+}
+
+.card-info > li > a:nth-child(1) {
+    font-weight: 400;
+}
+
+
+.card-info img {
+    margin-top: 15px;
+    background-color: rgb(133, 133, 133);
+    height: 40%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
-.card-info > li:nth-child(4){
+.card-info li:nth-child(3) {
     text-align: center;
-    width: 100%;
-    background-color: #3483fa93;
-    font-size: 13px;
+    font-size: 14px;
+}
+
+.card-info>li:nth-child(4) {
+    text-align: center;
+    width: 150px;
+    background-color: #3483fa34;
+    font-size: 12px;
     padding: 5px 0 5px;
     text-decoration: none;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-info li:nth-child(3) a {
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.card-info li:nth-child(3) a:hover {
+    color: #3483fa;
+}
+
+.card-info li:nth-child(4) a {
+    color: rgb(0, 89, 255);
+}
+
+.card-info li:nth-child(4):hover {
+    background-color: #3483fa5e;
+}
+
+.card-info:hover li:nth-child(3) a {
+    color: #3483fa;
+}
+
+.card-info:hover li:nth-child(4) {
+    background-color: #3483fa5e;
 }
