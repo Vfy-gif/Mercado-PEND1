@@ -455,7 +455,7 @@ a {
     font-size: 14px;
 }
 
-.card-info > li > a:nth-child(1) {
+.card-info>li>a:nth-child(1) {
     font-weight: 400;
 }
 
@@ -509,4 +509,176 @@ a {
 
 .card-info:hover li:nth-child(4) {
     background-color: #3483fa5e;
+}
+
+.container-produtos {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    background-color: red;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.produto-oferta-dia {
+    background-color: blue;
+    height: 400px;
+    width: 20%;
+
+}
+
+.produto-ofertas {
+    background-color: green;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.produto-ofertado {
+    width: 181.5px;
+    border: 1px solid black;
+    background-color: purple;
+    position: relative;
+    padding-inline: 10px;
+}
+
+.produto-ofertado img {
+    width: 100%;
+}
+
+.produto-ofertado li {
+    list-style: none;
+    font-family: "Helvetica", "Arial", sans-serif;
+    margin-bottom: 13px;
+    margin-top: 4px;
+}
+
+.produto-ofertado li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.produto-ofertado li a:hover {
+    color: rgb(0, 132, 255);
+}
+
+.produto-ofertado span {
+    font-weight: 300;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 25px;
+    display: flex;
+}
+
+.produto-ofertado span li {
+    font-size: 13px;
+}
+
+.produto-ofertado h1 {
+    font-weight: 300;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+}
+
+.produto-ofertado h1:nth-child(1) {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 14px;
+}
+
+.stars {
+    display: flex;
+    margin-top: -10px;
+}
+
+.star-item {
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    position: relative;
+    padding-inline: -10px;
+}
+
+.triangule-star-first {
+    height: 5px;
+    width: 5px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    transform: rotate(180deg);
+    position: absolute;
+    margin-top: 10px;
+}
+
+.triangule-star-second {
+    height: 5px;
+    width: 5px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+    transform: rotate(22deg);
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.triangule-star-third {
+    height: 5px;
+    width: 5px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid black;
+    transform: rotate(159deg);
+    position: absolute;
+    z-index: 3;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+
+.star-item-off {
+    height: 16px;
+    width: 16px;
+    position: relative;
+    margin-top: 3px;
+    z-index: 5;
+}
+.star:nth-child(8) .star-item-off{
+    margin-left: -58px;
+}
+
+.triangule-star-first-off {
+    height: 4px;
+    width: 4px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #ffffff;
+    transform: rotate(180deg);
+    position: absolute;
+    margin-top: 8px;
+}
+
+.triangule-star-second-off {
+    height: 4px;
+    width: 4px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #ffffff;
+    transform: rotate(22deg);
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 4.8px;
+}
+
+.triangule-star-third-off {
+    height: 4px;
+    width: 4px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #ffffff;
+    transform: rotate(159deg);
+    position: absolute;
+    z-index: 3;
+    margin-top: 4px;
+    margin-left: 3.2px;
 }
