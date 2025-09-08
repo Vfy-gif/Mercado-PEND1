@@ -682,3 +682,15 @@ a {
     margin-top: 4px;
     margin-left: 3.2px;
 }
+
+/*Cada produto podera criar este comando*/
+.stars .star-item:nth-child(5) .star-item-off{
+    display: none;
+}
+.stars .star-item:nth-child(4) .star-item-off{
+    display: none;
+}
+
+.produto-ofertado:hover li a{
+    color: #3483fa;
+}
