@@ -15,6 +15,10 @@ a {
     font-family: Helvetica;
 }
 
+body {
+    background-color: rgba(167, 167, 167, 0.493);
+}
+
 .nav-mercado {
     height: 100px;
     width: 100%;
@@ -427,7 +431,7 @@ a {
     background: linear-gradient(transparent,
             rgba(255, 255, 255, 0.82),
             rgb(231, 231, 231),
-            rgb(255, 255, 255));
+            rgba(167, 167, 167, 0.164));
 }
 
 .nav-cards {
@@ -512,50 +516,85 @@ a {
 }
 
 .container-produtos {
-    height: 400px;
+    height: 420px;
     width: 100%;
     display: flex;
-    background-color: red;
     margin-top: 100px;
     justify-content: center;
 }
 
 .produto-oferta-dia {
-    background-color: blue;
-    height: 400px;
+    background-color: rgb(224, 224, 224);
+    height: 100%;
     width: 20%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    padding: 0 15px 0 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.produto-oferta-dia h2{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: -130px;
+    font-size: 20px;
+}
+.produto-oferta-dia .produto-ofertado{
+    height: 100%;
+    width: 100%;
+    margin: 50px auto;
+}
 
+.produto-oferta-dia .produto-ofertado img{
+    height: 220px;
+    width: 270px;
+    margin: 0 auto;
 }
 
 .produto-ofertas {
-    background-color: green;
     display: flex;
     width: 50%;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .produto-ofertado {
     width: 181.5px;
-    border: 1px solid black;
-    background-color: purple;
     position: relative;
     padding-inline: 10px;
+    flex: 0 0 15vw;
+    margin-inline: 5px;
+    margin-top: 60px;
 }
 
 .produto-ofertado img {
+    height: 50%;
     width: 100%;
 }
 
 .produto-ofertado li {
     list-style: none;
     font-family: "Helvetica", "Arial", sans-serif;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
     margin-top: 4px;
 }
 
 .produto-ofertado li a {
     text-decoration: none;
     color: inherit;
+    font-size: 14px;
+}
+
+.produto-ofertado li:nth-child(6) a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 11px;
 }
 
 .produto-ofertado li a:hover {
@@ -565,7 +604,7 @@ a {
 .produto-ofertado span {
     font-weight: 300;
     font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
 }
 
@@ -576,7 +615,7 @@ a {
 .produto-ofertado h1 {
     font-weight: 300;
     font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .produto-ofertado h1:nth-child(1) {
@@ -588,13 +627,12 @@ a {
 
 .stars {
     display: flex;
-    margin-top: -10px;
+    margin-top: -4px;
 }
 
 .star-item {
     height: 20px;
     width: 20px;
-    background-color: blue;
     position: relative;
     padding-inline: -10px;
 }
@@ -642,8 +680,10 @@ a {
     position: relative;
     margin-top: 3px;
     z-index: 5;
+    margin-left: 1.8px;
 }
-.star:nth-child(8) .star-item-off{
+
+.star:nth-child(8) .star-item-off {
     margin-left: -58px;
 }
 
@@ -684,13 +724,46 @@ a {
 }
 
 /*Cada produto podera criar este comando*/
-.stars .star-item:nth-child(5) .star-item-off{
-    display: none;
-}
-.stars .star-item:nth-child(4) .star-item-off{
+.stars .star-item:nth-child(5) .star-item-off {
     display: none;
 }
 
-.produto-ofertado:hover li a{
+.stars .star-item:nth-child(4) .star-item-off {
+    display: none;
+}
+
+.produto-ofertado:hover li a {
     color: #3483fa;
 }
+
+@media (max-width: 1440px) {
+    .nav-cards {
+        display: flex;
+        height: 270px;
+        width: 100%;
+        margin-top: -260px;
+        position: absolute;
+        justify-content: center;
+    }
+
+    .indicators {
+        display: flex;
+        padding-top: 250px;
+    }
+}
+
+.produto-ofertas h2 {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.produto-ofertas>h2>a {
+    font-weight: 400;
+    font-size: 15px;
+    color: #3437fa;
+    margin-left: 10px;
+}
+
